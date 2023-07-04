@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Voyxo</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Voyxo</a></div>
+            <ul class="links">
+                <li><a href="Sobre">Sobre</a></li>
+                <li><a href="https://wa.me/qr/DVKY3MQJPOUSC1">Contato</a></li>
+                <li><a href="PDF's">PDF</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <img id="button" src="menu/more.png" alt="">
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="Sobre">Sobre</a></li>
+            <li><a href="https://wa.me/qr/DVKY3MQJPOUSC1">Contato</a></li>
+            <li><a href="PDF's">PDF</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="text">
+            <div class="title">
+                <img src="" alt=""><h1 id="logo">Voyxo</h1>
+            </div>
+            <p>Olá, meu nome é Luís Fernando, e tenho o design como hobbie,<br> porém nesses últimos dias decidi me por levar o design a sério,<br> esse é o meu portifólio, para ver ás imagens basta clicar no botão abaixo.</p>
+        </section>
+        <div class="container">
+            <div id="prot"><h1>Social Media</h1><p>O pacote social media é aquele no qual eu produzo post's <br> diários para o seu instagram, contendo stories, destaques, campanhas e etc...</p></div>
+            <div id="prot"><h1>Motion Design</h1><p>Motion design é o trabalho de dar vida ás suas imagens, animarei sua logo ou até mesmo editar pequenos videos</p></div>
+            <div id="prot"><h1>Logo Design</h1><p>Já no logo design eu faço sua logo com o máximo de detalhes possíves, mockups, medidas, cores e lógica. Por ser um trabalho um tanto quando díficil, o seu preço se torna mais alto</p></div>
+        </div>
+        <div class="pricipal">
+            <div class="portfo">
+                <div ><img id="imgs" src="CSS/imgs/Hamburgue2r.png" alt=""></div>
+                <div ><img id="imgs" src="CSS/imgs/Pizza3_1.gif" alt=""></div>
+                <div ><img id="imgs" src="CSS/imgs/pepzi.png" alt=""></div>
+    
+            </div>
+        </div>
+
+
+    </main>
+
+    <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ?'toggle_btn xmark'
+                :'toggle_btn'
+            }
+    </script>
+</body>
+</html>
